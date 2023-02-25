@@ -25,7 +25,7 @@ def predict():
         urlimg2 = urlimg2 + datas[-1]
         urlimg2 = urlimg2 + '&token=' + request.args['token']
     #contents = urllib2.urlopen(urlimg2).read()
-    contents = requests.get(urlimg).content
+    contents = requests.get(urlimg2).content
     return jsonify(query(contents))
 
 if __name__ == "__main__":
