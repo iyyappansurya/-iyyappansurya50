@@ -3,7 +3,7 @@ import requests
 import urllib.request as urllib2
 
 API_URL = "https://api-inference.huggingface.co/models/nickmuchi/yolos-small-plant-disease-detection"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer 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"}
 app = Flask(__name__)
 
 def query(data):
