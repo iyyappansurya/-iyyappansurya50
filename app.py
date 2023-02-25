@@ -24,7 +24,8 @@ def predict():
         datas = img.split('/')
         urlimg2 = urlimg2 + datas[-1]
         urlimg2 = urlimg2 + '&token=' + request.args['token']
-    contents = urllib2.urlopen(urlimg2).read()
+    #contents = urllib2.urlopen(urlimg2).read()
+    contents = requests.get(urlimg).content
     return jsonify(query(contents))
 
 if __name__ == "__main__":
